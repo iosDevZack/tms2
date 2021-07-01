@@ -34,33 +34,84 @@ class ViewController: UIViewController {
         
         print("__________________________TASK2__________________________")
         
-        let groupOfStudents: GroupOfStudents = GroupOfStudents(nameOfGroup: "lawyers",
-                                                               nameOfStudents: ["Bob", "Tony", "Andry", "Jane", "Gomer", "Bart"],
-                                                               gradeOfStudents: [5.5, 7.8, 6.9, 2.3, 8.7, 9.2])
-        print(groupOfStudents.nameOfGroup)
-        print(groupOfStudents.nameOfStudents)
-        print(groupOfStudents.gradeOfStudents)
+        let students1 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                          nameOfStudents: "Bob",
+                                                          gradeOfStudents: 5.5)
+        
+        let students2 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                           nameOfStudents: "Tony",
+                                                           gradeOfStudents: 7.8)
+        
+        let students3 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                           nameOfStudents: "Andry",
+                                                           gradeOfStudents: 6.9)
+        
+        let students4 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                           nameOfStudents: "Jane",
+                                                           gradeOfStudents: 2.3)
+        
+        let students5 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                           nameOfStudents: "Gomer",
+                                                           gradeOfStudents: 8.7)
+        
+        let students6 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
+                                                           nameOfStudents: "Bart",
+                                                           gradeOfStudents: 9.2)
+        
+        let groupOfStudentsArray :[GroupOfStudents] = [students1, students2, students3 , students4 , students5, students6]
+        
+        print(students1.nameOfGroup)
+        print(students1.nameOfStudents)
+        print(students1.gradeOfStudents)
+
+        print(students2.nameOfGroup)
+        print(students2.nameOfStudents)
+        print(students2.gradeOfStudents)
+
+        print(students3.nameOfGroup)
+        print(students3.nameOfStudents)
+        print(students3.gradeOfStudents)
+
+        print(students4.nameOfGroup)
+        print(students4.nameOfStudents)
+        print(students4.gradeOfStudents)
+
+        print(students5.nameOfGroup)
+        print(students5.nameOfStudents)
+        print(students5.gradeOfStudents)
+
+        print(students6.nameOfGroup)
+        print(students6.nameOfStudents)
+        print(students6.gradeOfStudents)
+        
         
         
 //        3. Напишите метод в группе, которая выведет красиво всех студентов группы.
         
         print("__________________________TASK3__________________________")
         
-        groupOfStudents.printAll()
+        groupOfStudentsArray[0].studentsArray()
+        groupOfStudentsArray[1].studentsArray()
+        groupOfStudentsArray[2].studentsArray()
+        groupOfStudentsArray[3].studentsArray()
+        groupOfStudentsArray[4].studentsArray()
+        groupOfStudentsArray[5].studentsArray()
+        
         
         
 //        4. Напишите метод который удалит из группы тех студентов, у кого средний бал меньше заданного(бал передать в качестве параметра)
         
         print("__________________________TASK4__________________________")
         
-        groupOfStudents.middleGrade(7.0)
+        groupOfStudentsArray[0].middleGrade(8)
+        groupOfStudentsArray[1].middleGrade(8)
+        groupOfStudentsArray[2].middleGrade(8)
+        groupOfStudentsArray[3].middleGrade(8)
+        groupOfStudentsArray[4].middleGrade(8)
+        groupOfStudentsArray[5].middleGrade(8)
         
         
-        
-        
-        
-        
-        
+       
         
         
         
