@@ -11,7 +11,7 @@ class Student {
     let firstname: String
     let lastname: String
     let yearWasBorn: Int
-    let gradeStudent: Float
+    var gradeStudent: Float
     
     init(firstname: String, lastname: String, yearWasBorn: Int, gradeStudent: Float) {
         self.firstname = firstname
@@ -19,5 +19,12 @@ class Student {
         self.yearWasBorn = yearWasBorn
         self.gradeStudent = gradeStudent
         
+    }
+    
+    func printStudent() {
+        print("Name: \(firstname)")
+        print("lastname: \(lastname)")
+        print("yearWasBorn: \(yearWasBorn)")
+        print("gradeStudent: \(gradeStudent)")
     }
 }

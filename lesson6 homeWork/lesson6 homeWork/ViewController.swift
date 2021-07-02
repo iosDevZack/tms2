@@ -24,101 +24,100 @@ class ViewController: UIViewController {
                                        yearWasBorn: 2000,
                                        gradeStudent: 8.5)
         
-        print(student.firstname)
-        print(student.lastname)
-        print(student.yearWasBorn)
-        print(student.gradeStudent)
+        student.printStudent()
+        
         
         
 //        2.Создайте класс группа (студенческая группа, как в универе) с свойствами название группы и массивом студентов (как журнал)
         
         print("__________________________TASK2__________________________")
         
-        let students1 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                          nameOfStudents: "Bob",
-                                                          gradeOfStudents: 5.5)
+        let list = GroupOfStudents(nameOfGroup: "Lawyers")
         
-        let students2 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                           nameOfStudents: "Tony",
-                                                           gradeOfStudents: 7.8)
-        
-        let students3 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                           nameOfStudents: "Andry",
-                                                           gradeOfStudents: 6.9)
-        
-        let students4 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                           nameOfStudents: "Jane",
-                                                           gradeOfStudents: 2.3)
-        
-        let students5 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                           nameOfStudents: "Gomer",
-                                                           gradeOfStudents: 8.7)
-        
-        let students6 : GroupOfStudents = GroupOfStudents (nameOfGroup: "Lawyers",
-                                                           nameOfStudents: "Bart",
-                                                           gradeOfStudents: 9.2)
-        
-        let groupOfStudentsArray :[GroupOfStudents] = [students1, students2, students3 , students4 , students5, students6]
-        
-        print(students1.nameOfGroup)
-        print(students1.nameOfStudents)
-        print(students1.gradeOfStudents)
+        let student1 : Student = Student (firstname: "Bob",
+                                           lastname: "Talen",
+                                           yearWasBorn: 1991,
+                                           gradeStudent: 5.5)
 
-        print(students2.nameOfGroup)
-        print(students2.nameOfStudents)
-        print(students2.gradeOfStudents)
+        let student2 : Student = Student (firstname: "Tony",
+                                           lastname: "Pip",
+                                           yearWasBorn: 1992,
+                                           gradeStudent: 7.8)
 
-        print(students3.nameOfGroup)
-        print(students3.nameOfStudents)
-        print(students3.gradeOfStudents)
+        let student3 : Student = Student (firstname: "Andry",
+                                           lastname: "Jakcson",
+                                           yearWasBorn: 1994,
+                                           gradeStudent: 6.9)
 
-        print(students4.nameOfGroup)
-        print(students4.nameOfStudents)
-        print(students4.gradeOfStudents)
+        let student4 : Student = Student (firstname: "Jane",
+                                           lastname: "Smith",
+                                           yearWasBorn: 1994,
+                                           gradeStudent: 2.3)
 
-        print(students5.nameOfGroup)
-        print(students5.nameOfStudents)
-        print(students5.gradeOfStudents)
+        let student5 : Student = Student (firstname: "Gomer",
+                                           lastname: "Sipm",
+                                           yearWasBorn: 1993,
+                                           gradeStudent: 8.7)
 
-        print(students6.nameOfGroup)
-        print(students6.nameOfStudents)
-        print(students6.gradeOfStudents)
+        let student6 : Student = Student (firstname: "Lawyers",
+                                           lastname: "Bart",
+                                           yearWasBorn: 1992,
+                                           gradeStudent: 9.2)
+
+        let Students  = [student1, student2, student3 , student4 , student5, student6]
         
+        print(student1.firstname)
+        print(student1.lastname)
+        print(student1.yearWasBorn)
+        print(student1.gradeStudent)
         
+        print(student2.firstname)
+        print(student2.lastname)
+        print(student2.yearWasBorn)
+        print(student2.gradeStudent)
+        
+        print(student3.firstname)
+        print(student3.lastname)
+        print(student3.yearWasBorn)
+        print(student3.gradeStudent)
+        
+        print(student4.firstname)
+        print(student4.lastname)
+        print(student4.yearWasBorn)
+        print(student4.gradeStudent)
+        
+        print(student5.firstname)
+        print(student5.lastname)
+        print(student5.yearWasBorn)
+        print(student5.gradeStudent)
+        
+        print(student6.firstname)
+        print(student6.lastname)
+        print(student6.yearWasBorn)
+        print(student6.gradeStudent)
+        
+ 
         
 //        3. Напишите метод в группе, которая выведет красиво всех студентов группы.
         
         print("__________________________TASK3__________________________")
         
-        groupOfStudentsArray[0].studentsArray()
-        groupOfStudentsArray[1].studentsArray()
-        groupOfStudentsArray[2].studentsArray()
-        groupOfStudentsArray[3].studentsArray()
-        groupOfStudentsArray[4].studentsArray()
-        groupOfStudentsArray[5].studentsArray()
-        
+        list.studentsArray(student: student1)
+        list.studentsArray(student: student2)
+        list.studentsArray(student: student3)
+        list.studentsArray(student: student4)
+        list.studentsArray(student: student5)
+        list.studentsArray(student: student6)
         
         
 //        4. Напишите метод который удалит из группы тех студентов, у кого средний бал меньше заданного(бал передать в качестве параметра)
         
         print("__________________________TASK4__________________________")
         
-        groupOfStudentsArray[0].middleGrade(8)
-        groupOfStudentsArray[1].middleGrade(8)
-        groupOfStudentsArray[2].middleGrade(8)
-        groupOfStudentsArray[3].middleGrade(8)
-        groupOfStudentsArray[4].middleGrade(8)
-        groupOfStudentsArray[5].middleGrade(8)
-        
-        
+        list.remove(where: 7.7)
        
-        
-        
-        
-        
-        
-        
-        
+   
+   
     }
 
 
