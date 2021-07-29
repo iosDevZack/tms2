@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController1" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-os-69x">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG2-m7-DoA">
+                                <rect key="frame" x="139" y="406" width="112" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6U-Fi-BNO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-7O-qJc">
+                                <rect key="frame" x="139" y="606" width="112" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93e-JV-Il6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-61-d0f">
+                                <rect key="frame" x="139" y="206" width="112" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9u-Ns-3w2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wG2-m7-DoA" secondAttribute="leading" id="29Z-th-0X4"/>
+                            <constraint firstItem="7Mj-61-d0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="56M-xF-Qat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gyi-7O-qJc" secondAttribute="trailing" constant="139" id="9Mj-KF-IHh"/>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="9Vd-n6-VrF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Mj-61-d0f" secondAttribute="trailing" constant="139" id="GdE-aO-0Ya"/>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="trailing" secondItem="wG2-m7-DoA" secondAttribute="trailing" id="Lg4-Sv-EBu"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Mj-61-d0f" secondAttribute="leading" id="SN4-zi-Ogr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gyi-7O-qJc" secondAttribute="bottom" constant="162" id="YUe-ou-uP3"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Mj-61-d0f" secondAttribute="trailing" id="YlM-Ar-nzW"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cUS-e6-Khd"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ej4-tV-nB6"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gGW-EE-f3W"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pdU-AN-dfR"/>
+                            <constraint firstItem="7Mj-61-d0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="162" id="tKu-mM-afw"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="upK-fR-75v"/>
+                            <constraint firstAttribute="bottom" secondItem="HUu-os-69x" secondAttribute="bottom" id="vaP-y8-UOf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="375" height="334"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
