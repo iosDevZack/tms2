@@ -33,9 +33,10 @@ class ViewController1: UIViewController {
                         self.present(self.getViewController(with: self.storyboards[0]), animated: true, completion: nil)}),
                 UIAlertAction(title: "Continue",style: .default,handler: { _ in
                         self.present(self.getViewController(with: self.storyboards[0]), animated: true, completion: nil)}))
-        }
+        } else {
         present(getViewController(with: storyboards[sender.tag]), animated: true, completion: nil)
     }
 }
 
 
+}

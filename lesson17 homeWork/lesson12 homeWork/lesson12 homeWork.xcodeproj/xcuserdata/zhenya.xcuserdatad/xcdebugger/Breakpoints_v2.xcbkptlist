@@ -20,53 +20,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "888E4B77-0BA3-4ED6-A1CA-B216E9A26BDF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "lesson12 homeWork/ViewsControllers/ViewControllerPlay.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "saveCheckers()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "888E4B77-0BA3-4ED6-A1CA-B216E9A26BDF - a2bf09a9c4cb51a7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "lesson12_homeWork.ViewController2.saveCheckers() -&gt; ()"
-                  moduleName = "lesson12 homeWork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhenya/Desktop/%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%20TMS/homeWork/lesson17%20homeWork/lesson12%20homeWork/lesson12%20homeWork/ViewsControllers/ViewControllerPlay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "888E4B77-0BA3-4ED6-A1CA-B216E9A26BDF - f499928ac9ccf08"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIView) -&gt; () in lesson12_homeWork.ViewController2.saveCheckers() -&gt; ()"
-                  moduleName = "lesson12 homeWork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhenya/Desktop/%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%20TMS/homeWork/lesson17%20homeWork/lesson12%20homeWork/lesson12%20homeWork/ViewsControllers/ViewControllerPlay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

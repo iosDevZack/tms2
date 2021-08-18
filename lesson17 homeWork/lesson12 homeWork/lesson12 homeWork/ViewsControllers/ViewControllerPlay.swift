@@ -34,10 +34,9 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print (documentDirectory)
-        
-        createChessBoard()
         getSaveData()
+        createChessBoard()
+        
         
         timer = Timer(timeInterval: 1, target: self, selector: #selector(timerFunc), userInfo: nil, repeats: true)
         RunLoop.main.add(timer!, forMode: .common)
@@ -79,16 +78,10 @@ class ViewController2: UIViewController {
                 cell.tag = i
                 chessBoard.addSubview(cell)
                 i += 1
-                
-                guard row < 3 || row > 4, cell.backgroundColor == .black else { continue }
 
                 //                Добавить на шашку изображение
                 let checkerImage = UIImageView(frame: CGRect(x: 5, y: 5, width: sizeCell - 10, height: sizeCell - 10))
-                checkerImage.tag = row > 3 ? 0 : 1 // поочередность перемещения
-                checkerImage.image = row > 3 ? UIImage(named: "blue") : UIImage(named: "red")
                 checkerImage.isUserInteractionEnabled = true // Чтобы можно было двигать изображение
-//                checker.layer.cornerRadius = checker.bounds.size.width / 2.0
-                cell.addSubview(checkerImage)
                 
                 let longGesture = UILongPressGestureRecognizer(target: self, action: #selector(longGesture(_:)))
                 longGesture.minimumPressDuration = 0.1
@@ -100,9 +93,9 @@ class ViewController2: UIViewController {
                 checkerImage.addGestureRecognizer(panGesture)
                 
                 guard !savedCheckers.isEmpty else {
-             
+                    guard row < 3 || row > 4, cell.backgroundColor == .black else { continue }
                     checkerImage.image = UIImage(named: row < 3 ? "red" : "blue")
-                    checkerImage.tag = row > 3 ? 0 : 1
+                    checkerImage.tag = row < 3 ? allChekers.blue.rawValue : allChekers.red.rawValue
                     cell.addSubview(checkerImage)
                     
                     continue
@@ -110,8 +103,9 @@ class ViewController2: UIViewController {
                 
                 if let checker = savedCheckers.first(where: {$0.positionTag == cell.tag}) {
                     checkerImage.image = UIImage(named: checker.colorTag == 0 ? "red" : "blue")
-                    checkerImage.tag = checker.colorTag == 0 ? 0 : 1
+                    checkerImage.tag = checker.colorTag ?? 0
                     cell.addSubview(checkerImage)
+//                    print("\(cell.tag) - \(checkerImage.tag)")
                 }
             }
         }
@@ -144,6 +138,7 @@ class ViewController2: UIViewController {
             if !cell.subviews.isEmpty {
                 cell.subviews.forEach { checker in
                     let savedChecker = Checker(colorTag: checker.tag, positionTag: cell.tag)
+//                    print("\(cell.tag) - \(checker.tag)")
                     savedCheckers.append(savedChecker)
                 }
             }
@@ -226,34 +221,46 @@ class ViewController2: UIViewController {
     
     
     @IBAction func closeButtonAction(_ sender: UIButton) {
-        // Создание Алерт окна
-        let alert = UIAlertController(title: "WARNING", message: "Are you sure you want to leave the game?", preferredStyle: .alert)
-
-        // Создание кнопки в окне Алерт
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
-        //Cоздание кнопки в окне алерт и сохранение данных при нажатии
-        let saveGame = UIAlertAction(title: "Save game", style: .default, handler: {_ in
-            self.saveCheckers()
-            self.saveDataToUserDefaults()
-
-        })
-
-        // Создание кнопки в окне алерт
-        let leaveTheGame = UIAlertAction(title: "Leave the game", style: .default) { _ in
-        self.dismiss(animated: true, completion: nil)
-        self.timer?.invalidate()
-        self.timer = nil
-        }
-
-        // Добавление кнопок в окно Алерт(а)
-        alert.addAction(cancel)
-        alert.addAction(saveGame)
-        alert.addAction(leaveTheGame)
-
-        // Отображение окна Алерта
-        present(alert, animated: true, completion: nil)
+        presentAlertController(with: nil, message: "Do you want to leave the game?",
+                               actions: UIAlertAction(title: "Save and leave the game",
+                                                      style: .default, handler: { _ in
+                                self.saveCheckers()
+                                self.saveDataToUserDefaults()
+                                self.dismiss(animated: true, completion: nil)}),
+                               UIAlertAction(title: "Leave the game", style: .default,
+                                             handler: { _ in self.dismiss(animated: true, completion: nil)}))
     }
+       
+        
+//        // Создание Алерт окна
+//        let alert = UIAlertController(title: "WARNING", message: "Are you sure you want to leave the game?", preferredStyle: .alert)
+//
+//        // Создание кнопки в окне Алерт
+//        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//
+//        //Cоздание кнопки в окне алерт и сохранение данных при нажатии
+//        let saveGame = UIAlertAction(title: "Save game and leave the game", style: .default, handler: {_ in
+//            self.saveCheckers()
+//            self.saveDataToUserDefaults()
+//
+//        })
+//
+//        // Создание кнопки в окне алерт
+//        let leaveTheGame = UIAlertAction(title: "Leave the game", style: .default) { _ in
+//        self.dismiss(animated: true, completion: nil)
+//        self.timer?.invalidate()
+//        self.timer = nil
+//        }
+//
+//        // Добавление кнопок в окно Алерт(а)
+//        alert.addAction(cancel)
+//        alert.addAction(saveGame)
+//        alert.addAction(leaveTheGame)
+//
+//        // Отображение окна Алерта
+//        present(alert, animated: true, completion: nil)
+//    }
     
     
     @objc func timerFunc() {

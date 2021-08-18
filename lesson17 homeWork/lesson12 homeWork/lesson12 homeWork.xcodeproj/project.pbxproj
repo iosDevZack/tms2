@@ -61,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE11EA0C26CD2FFE001C4A9F /* Exstansions */ = {
+			isa = PBXGroup;
+			children = (
+				EE08AE4D26CBD93F005FC606 /* Alert.swift */,
+				EE08AE4B26CBD559005FC606 /* Keys.swift */,
+				EE08AE4926CBD3D7005FC606 /* Checker.swift */,
+			);
+			path = Exstansions;
+			sourceTree = "<group>";
+		};
 		EE9AD6F326AC4D4E007C6D28 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		EEC24E5626AAF98100E157F3 /* lesson12 homeWork */ = {
 			isa = PBXGroup;
 			children = (
+				EE11EA0C26CD2FFE001C4A9F /* Exstansions */,
 				EE9C2F2326B2C49100E46F8B /* Fonts */,
 				EE9AD6F826AC4DB9007C6D28 /* Storyboards */,
 				EE9AD6F326AC4D4E007C6D28 /* ViewsControllers */,
@@ -120,9 +131,6 @@
 				EEC24E6026AAF98200E157F3 /* Assets.xcassets */,
 				EEC24E6226AAF98200E157F3 /* LaunchScreen.storyboard */,
 				EEC24E6526AAF98200E157F3 /* Info.plist */,
-				EE08AE4926CBD3D7005FC606 /* Checker.swift */,
-				EE08AE4B26CBD559005FC606 /* Keys.swift */,
-				EE08AE4D26CBD93F005FC606 /* Alert.swift */,
 			);
 			path = "lesson12 homeWork";
 			sourceTree = "<group>";
