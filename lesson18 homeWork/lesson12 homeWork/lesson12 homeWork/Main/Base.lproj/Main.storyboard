@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController1" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-os-69x">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-7O-qJc">
+                                <rect key="frame" x="139" y="540" width="113" height="51"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="25"/>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93e-JV-Il6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mj-61-d0f">
+                                <rect key="frame" x="139" y="218" width="113" height="51"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="25"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9u-Ns-3w2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-m3-4IS">
+                                <rect key="frame" x="139" y="701" width="113" height="51"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="25"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dF-91-Ygd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG2-m7-DoA">
+                                <rect key="frame" x="139" y="379" width="113" height="51"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="25"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6U-Fi-BNO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="leading" secondItem="fQm-m3-4IS" secondAttribute="leading" id="3SC-8V-N3f"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="leading" secondItem="gyi-7O-qJc" secondAttribute="leading" id="42y-R2-soO"/>
+                            <constraint firstItem="fQm-m3-4IS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="BoJ-j6-mWE"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="top" secondItem="7Mj-61-d0f" secondAttribute="bottom" constant="110" id="IE3-H2-zaH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQm-m3-4IS" secondAttribute="trailing" constant="138" id="QdM-qS-H5b"/>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="trailing" secondItem="fQm-m3-4IS" secondAttribute="trailing" id="R0g-0B-11O"/>
+                            <constraint firstItem="7Mj-61-d0f" firstAttribute="leading" secondItem="wG2-m7-DoA" secondAttribute="leading" id="eyX-Lg-sXu"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gGW-EE-f3W"/>
+                            <constraint firstItem="fQm-m3-4IS" firstAttribute="top" secondItem="gyi-7O-qJc" secondAttribute="bottom" constant="110" id="hP0-eJ-Me9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fQm-m3-4IS" secondAttribute="bottom" constant="58" id="lQG-02-YdC"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pdU-AN-dfR"/>
+                            <constraint firstItem="gyi-7O-qJc" firstAttribute="top" secondItem="wG2-m7-DoA" secondAttribute="bottom" constant="110" id="tLS-tu-EUa"/>
+                            <constraint firstItem="7Mj-61-d0f" firstAttribute="trailing" secondItem="wG2-m7-DoA" secondAttribute="trailing" id="uWD-9g-oe2"/>
+                            <constraint firstItem="HUu-os-69x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="upK-fR-75v"/>
+                            <constraint firstAttribute="bottom" secondItem="HUu-os-69x" secondAttribute="bottom" id="vaP-y8-UOf"/>
+                            <constraint firstItem="wG2-m7-DoA" firstAttribute="trailing" secondItem="gyi-7O-qJc" secondAttribute="trailing" id="vhH-LL-Ht0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="375" height="334"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
