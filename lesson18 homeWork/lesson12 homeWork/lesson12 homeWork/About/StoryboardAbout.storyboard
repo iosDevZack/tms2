@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U67-S8-tr5">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller About-->
+        <scene sceneID="Y9O-BG-K6A">
+            <objects>
+                <viewController id="U67-S8-tr5" customClass="ViewControllerAbout" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQ4-9z-BG8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="5300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-JQ-v4T">
+                                <rect key="frame" x="0.0" y="44" width="390" height="5222"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pI-ZR-hF8">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="5238.333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="История шашек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K79-3I-t8v">
+                                                <rect key="frame" x="16" y="0.0" width="358" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNS-Gi-Ydr">
+                                                <rect key="frame" x="16" y="66.999999999999972" width="358" height="426.33333333333326"/>
+                                                <string key="text">Шашки — одна из самых древних игр. Известно, что ими увлекались еще египетские фараоны. Древние египтяне считали, что шашки изобрел бог мудрости Тот, а древние греки приписывали создание этой игры вестнику богов Гермесу, покровителю воров и торговцев.
+
+Игра, подобная шашкам была распространена в Древнем Египте и первые упоминания о ней относятся к 1600 году до н.э. При раскопках обнаружена древняя «шашечная» доска с похожими друг на друга фишками и несколько изображений, запечатлевших игроков в процессе игры. В «египетские шашки» (как назвали эту игру специалисты) играли и простые люди, и знать – вплоть до фараонов. Причем иногда за неимением доски игра велась прямо на земле, где от руки расчерчивали сетку.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek1" translatesAutoresizingMaskIntoConstraints="NO" id="MOg-Aq-4eP">
+                                                <rect key="frame" x="16" y="523.33333333333337" width="358" height="246"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2S-HI-Nwk">
+                                                <rect key="frame" x="16" y="799.33333333333337" width="358" height="223.33333333333337"/>
+                                                <string key="text">Свои «шашки» были в древней Греции, Лидии, Фригии и др. местах. Чрезвычайно распространенная в древнем Риме игра «латрункули» (от «латро» – букв. воин, наемный солдат) относится к числу прямых предшественников европейских шашек. Упоминания о подобных играх можно найти в мировом фольклоре, литературных произведениях и трудах ученых (включая Одиссею Гомера, сочинения Геродота и римских авторов).</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek2" translatesAutoresizingMaskIntoConstraints="NO" id="9G6-8f-nvL">
+                                                <rect key="frame" x="16" y="1052.6666666666667" width="358" height="347"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4A-QC-N3W">
+                                                <rect key="frame" x="16" y="1429.6666666666667" width="358" height="588.33333333333326"/>
+                                                <string key="text">По одной из версий, шашки как таковые произошли от мавританской игры «алькерк», где использовались 12 фишек с каждой стороны и существовало правило взятия чужой фигуры «прыжком» через нее. Правда, фигуры в алькерке устанавливались на пересечении линий игрового поля, в шашках же они стали ставиться на поля-клетки – аналогично шахматным фигурам.
+
+Метод передвижения шашек по полю (по диагонали) взят из правил передвижения королевы (ферзя) в шахматах. Именно этот факт в своё время был причиной того, что шашки в некоторых частях Англии до сих пор называют draughts - словом, обозначающим ход королевы в шахматах.
+
+Название одной из разновидностей шашек checkers появилось от слова, обозначающего шахматную доску - checkered - что в переводе означает клетчатый. Пилигримы, приплывшие в Северную Америку из тех областей Англии, где игру в шашки было принято называть на современный лад, стали причиной распространения слова checkers во всех англоязычных странах.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek3" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-Tl-Bet">
+                                                <rect key="frame" x="16" y="2048" width="358" height="184"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIM-WF-5cz">
+                                                <rect key="frame" x="16" y="2262" width="358" height="933.33333333333348"/>
+                                                <string key="text">Гарольд Мюррэй, занимавшийся изучением истории шахмат и шашек, пришёл к выводу, что шашки распространялись по миру очень медленно - гораздо медленнее других настольных игр. Об этой игре он нашёл всего несколько упоминаний в период 12-16 веков. Всё говорит о том, что игра в этот период была распространена только на территории Англии, Франции и, возможно, Испании (есть упоминания о труде первого пособия о шашкам А.Торквемада, вышедшего именно в Испании в 1547 году, но не сохранившегося до наших дней).
+Не найдено было и информации о запретах игры в шашки со стороны церкви. Хотя в это время церковь запрещала многие старые и новые игры, включая азартные (карточные, кости) и шахматы.
+Исследования Гарольда Мюррэя говорят о том, что в 16-м веке с шашками что-то произошло и игра начала приобретать популярность и распространяться по Европе. 
+Примерно в 1535 году в правила шашек добавляют условие: если шашку соперника можно бить, то игрок обязан это делать. Это правило игры используется до сих пор в неизменном виде.
+В средневековой Европе умение играть в шашки было составной частью рыцарского воспитания (по одной из версий, бытовавшее ранее название шашечной игры «дамы» обязано своим происхождением характерному для рыцарского сословия культу прекрасной дамы). Предпринимались попытки теоретического осмысления игры. Автором первого пособия по шашкам считается А.Торквемада: оно вышло в Испании в 1547, но до наших дней не сохранилось и известно лишь по упоминаниям и описаниям в других источниках. Примерно сто лет спустя похожие книги появляются во Франции, а затем и в др. европейских государствах.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek4" translatesAutoresizingMaskIntoConstraints="NO" id="ju5-NN-E88">
+                                                <rect key="frame" x="16" y="3225.3333333333335" width="358" height="198"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="au3-eb-gpd">
+                                                <rect key="frame" x="16" y="3453.3333333333339" width="358" height="1623"/>
+                                                <mutableString key="text">Шашки были любимой игрой Адама Мицкевича, им он посвятил поэму «Warcaby». Наполеон Бонапарт предпочитал шашки шахматам, черпая в этой игре стратегию ведения боя, известно, что он никогда не расставался cо своей перламутровой шашечной доской.
+
+Шашки приобретают всю большую популярность в разных странах. В 19 в. стали проводиться национальные шашечные чемпионаты. Из-за отсутствия единых правил игры долгое время не удавалось организовать международные соревнования по шашкам. Наконец, был найден «компромисс» в виде 100-клеточных шашек (существует несколько красивых легенд о происхождении этой игры, исторические же источники свидетельствуют лишь, что она наверняка была известна во Франции еще в нач. 18 в. – этот период и принято считать временем рождения французских – позднее международных – шашек).
+В кон. 19 – первой трети 20 вв. проводились неофициальные чемпионаты мира по 100-клеточным шашкам. В них побеждали преимущественно родоначальники игры – французы (И.Вейс, С.Бизо, М.Фабр, М.Райхенбах, П.Гестем), в 1910–1930 мировой титул выигрывали также голландцы Г.Хообланд и Б.Шпрингер.
+Всемирная федерация шашек (ФМЖД).
+Основана в сентябре 1947. В том же году Федерация учредила звание международного гроссмейстера (присваивается в разных видах шашек).
+А уже в 1948 прошел первый в истории официальный чемпионат мира по шашкам (международным), победителем которого стал П.Роозенбург (Нидерланды), после этого еще трижды повторивший свой успех. С выходом на международную арену в середине 1950-х советских спортсменов основная борьба за звание сильнейшего шашиста в мире, как правило, ведется между представителями СССР и Нидерландов, признанных «шашечных держав». В Голландии с давних пор существует массовый интерес к шашкам. Она считается центром развития стоклеток. В стране существует около 400 профессиональных шашечных клубов.
+В кон. 1950 – сер. 1970-х семь раз чемпионом мира становился И.Куперман (СССР). Трижды лучшим признавался советский шашист А.Андрейко. В кон.1950 сер.1970-х семь раз чемпионом мира становился И.Куперман (СССР). Трижды лучшим признавался другой советский шашист - А.Андрейко. Затем пришла эпоха Х.Вирсмы, голландского мастера, шесть раз завоевывавшего чемпионский титул. Четырежды чемпионом был минчанин Анатолий Гантварг (СССР).
+Штаб-квартира ФМЖД располагается в Эстонии. В нее сейчас входят национальные федерации более 70 стран Азии, Африки, Америки и Европы. Федерация ведет работу по признанию шашек олимпийским видом спорта.
+Еще одна международная организация – Европейская конфедерация шашек (ЕДК). С 1965 она проводит чемпионат Европы (первоначально – Кубок Европы), проводит соревнования среди молодежи, женщин и ветеранов.
+Соревнования по шашкам проходят также в Америке, Африке и Азии. А так же на просторах далекой-далекой галактики.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbv-Rf-GD4">
+                                                <rect key="frame" x="132" y="5126.333333333333" width="126" height="52"/>
+                                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="26"/>
+                                                <state key="normal" title="Back to menu">
+                                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bakButtonAction:" destination="U67-S8-tr5" eventType="touchUpInside" id="jZL-cx-iRd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="MOg-Aq-4eP" firstAttribute="leading" secondItem="PNS-Gi-Ydr" secondAttribute="leading" id="0Fx-MJ-su6"/>
+                                            <constraint firstItem="PNS-Gi-Ydr" firstAttribute="top" secondItem="K79-3I-t8v" secondAttribute="bottom" constant="30" id="3DS-Yo-kFa"/>
+                                            <constraint firstItem="zIM-WF-5cz" firstAttribute="top" secondItem="K1K-Tl-Bet" secondAttribute="bottom" constant="30" id="64b-5J-iRW"/>
+                                            <constraint firstItem="PNS-Gi-Ydr" firstAttribute="leading" secondItem="K79-3I-t8v" secondAttribute="leading" id="6VL-Tz-UAm"/>
+                                            <constraint firstItem="ju5-NN-E88" firstAttribute="top" secondItem="zIM-WF-5cz" secondAttribute="bottom" constant="30" id="7DT-ju-gTi"/>
+                                            <constraint firstItem="au3-eb-gpd" firstAttribute="top" secondItem="ju5-NN-E88" secondAttribute="bottom" constant="30" id="9aK-dm-0Ke"/>
+                                            <constraint firstItem="K1K-Tl-Bet" firstAttribute="top" secondItem="x4A-QC-N3W" secondAttribute="bottom" constant="30" id="9mM-fm-inV"/>
+                                            <constraint firstItem="PNS-Gi-Ydr" firstAttribute="trailing" secondItem="K79-3I-t8v" secondAttribute="trailing" id="AeH-n3-hWB"/>
+                                            <constraint firstItem="x4A-QC-N3W" firstAttribute="trailing" secondItem="9G6-8f-nvL" secondAttribute="trailing" id="BZQ-8N-Czp"/>
+                                            <constraint firstItem="K79-3I-t8v" firstAttribute="top" secondItem="4pI-ZR-hF8" secondAttribute="top" id="Cwu-VB-HWk"/>
+                                            <constraint firstItem="zIM-WF-5cz" firstAttribute="leading" secondItem="K1K-Tl-Bet" secondAttribute="leading" id="I63-LE-Lms"/>
+                                            <constraint firstItem="x4A-QC-N3W" firstAttribute="leading" secondItem="9G6-8f-nvL" secondAttribute="leading" id="IWS-UI-CF5"/>
+                                            <constraint firstItem="MOg-Aq-4eP" firstAttribute="trailing" secondItem="PNS-Gi-Ydr" secondAttribute="trailing" id="JsY-mI-YgB"/>
+                                            <constraint firstItem="cbv-Rf-GD4" firstAttribute="top" secondItem="au3-eb-gpd" secondAttribute="bottom" constant="50" id="Lo1-C8-PHW"/>
+                                            <constraint firstItem="au3-eb-gpd" firstAttribute="trailing" secondItem="ju5-NN-E88" secondAttribute="trailing" id="MkO-ol-5RJ"/>
+                                            <constraint firstItem="9G6-8f-nvL" firstAttribute="top" secondItem="k2S-HI-Nwk" secondAttribute="bottom" constant="30" id="MqL-Pb-1rV"/>
+                                            <constraint firstItem="K79-3I-t8v" firstAttribute="leading" secondItem="4pI-ZR-hF8" secondAttribute="leading" constant="16" id="Nsh-Kc-eUm"/>
+                                            <constraint firstItem="k2S-HI-Nwk" firstAttribute="leading" secondItem="MOg-Aq-4eP" secondAttribute="leading" id="QUq-qW-oct"/>
+                                            <constraint firstItem="ju5-NN-E88" firstAttribute="leading" secondItem="zIM-WF-5cz" secondAttribute="leading" id="Qfl-d1-Zdv"/>
+                                            <constraint firstAttribute="trailing" secondItem="K79-3I-t8v" secondAttribute="trailing" constant="16" id="Xtg-NU-X4g"/>
+                                            <constraint firstItem="9G6-8f-nvL" firstAttribute="trailing" secondItem="k2S-HI-Nwk" secondAttribute="trailing" id="bll-wV-ElX"/>
+                                            <constraint firstItem="K1K-Tl-Bet" firstAttribute="leading" secondItem="x4A-QC-N3W" secondAttribute="leading" id="cFc-N4-6Jd"/>
+                                            <constraint firstItem="ju5-NN-E88" firstAttribute="trailing" secondItem="zIM-WF-5cz" secondAttribute="trailing" id="eea-Ve-T6p"/>
+                                            <constraint firstItem="k2S-HI-Nwk" firstAttribute="top" secondItem="MOg-Aq-4eP" secondAttribute="bottom" constant="30" id="emF-4y-xgY"/>
+                                            <constraint firstItem="K1K-Tl-Bet" firstAttribute="trailing" secondItem="x4A-QC-N3W" secondAttribute="trailing" id="emd-X6-lxe"/>
+                                            <constraint firstItem="9G6-8f-nvL" firstAttribute="leading" secondItem="k2S-HI-Nwk" secondAttribute="leading" id="hpg-Um-Y0v"/>
+                                            <constraint firstItem="au3-eb-gpd" firstAttribute="leading" secondItem="ju5-NN-E88" secondAttribute="leading" id="hz6-yN-8kZ"/>
+                                            <constraint firstItem="cbv-Rf-GD4" firstAttribute="centerX" secondItem="4pI-ZR-hF8" secondAttribute="centerX" id="nSp-0j-BHe"/>
+                                            <constraint firstItem="MOg-Aq-4eP" firstAttribute="top" secondItem="PNS-Gi-Ydr" secondAttribute="bottom" constant="30" id="noB-FC-2oZ"/>
+                                            <constraint firstItem="zIM-WF-5cz" firstAttribute="trailing" secondItem="K1K-Tl-Bet" secondAttribute="trailing" id="rhX-Hh-I7d"/>
+                                            <constraint firstItem="k2S-HI-Nwk" firstAttribute="trailing" secondItem="MOg-Aq-4eP" secondAttribute="trailing" id="uSQ-Cf-dLt"/>
+                                            <constraint firstItem="x4A-QC-N3W" firstAttribute="top" secondItem="9G6-8f-nvL" secondAttribute="bottom" constant="30" id="uUu-rd-JuQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="cbv-Rf-GD4" secondAttribute="bottom" constant="60" id="upy-cj-atW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4pI-ZR-hF8" secondAttribute="bottom" id="1w3-V0-ewk"/>
+                                    <constraint firstItem="4pI-ZR-hF8" firstAttribute="leading" secondItem="MMP-JQ-v4T" secondAttribute="leading" id="2fR-ay-b5t"/>
+                                    <constraint firstItem="4pI-ZR-hF8" firstAttribute="top" secondItem="MMP-JQ-v4T" secondAttribute="top" id="EdR-GX-dnN"/>
+                                    <constraint firstItem="4pI-ZR-hF8" firstAttribute="centerX" secondItem="MMP-JQ-v4T" secondAttribute="centerX" id="F6U-Z3-oRA"/>
+                                    <constraint firstAttribute="trailing" secondItem="4pI-ZR-hF8" secondAttribute="trailing" id="Zy2-Vl-Map"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IRp-cO-wg8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IRp-cO-wg8" firstAttribute="trailing" secondItem="MMP-JQ-v4T" secondAttribute="trailing" id="JR2-Tz-hvj"/>
+                            <constraint firstItem="MMP-JQ-v4T" firstAttribute="leading" secondItem="IRp-cO-wg8" secondAttribute="leading" id="QzR-67-R4e"/>
+                            <constraint firstItem="IRp-cO-wg8" firstAttribute="bottom" secondItem="MMP-JQ-v4T" secondAttribute="bottom" id="WvE-a3-MLj"/>
+                            <constraint firstItem="MMP-JQ-v4T" firstAttribute="top" secondItem="IRp-cO-wg8" secondAttribute="top" id="omX-fG-0mg"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="390" height="5300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiU-vi-gZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2533" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chek1" width="366" height="246"/>
+        <image name="chek2" width="320" height="347"/>
+        <image name="chek3" width="274" height="184"/>
+        <image name="chek4" width="254" height="198"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

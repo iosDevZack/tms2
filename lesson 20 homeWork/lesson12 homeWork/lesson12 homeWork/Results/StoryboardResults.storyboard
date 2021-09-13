@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller4-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController4" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="results" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-Vm-Cvp">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi2-p1-i4t" userLabel="Results1">
+                                <rect key="frame" x="16" y="60" width="358" height="61.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkl-ir-UyH">
+                                <rect key="frame" x="165.66666666666666" y="684" width="59" height="66"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="35"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vyo-7k-TbO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xi2-p1-i4t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="24W-zU-VnB"/>
+                            <constraint firstItem="xi2-p1-i4t" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="BRH-ei-cA5"/>
+                            <constraint firstAttribute="bottom" secondItem="k8N-Vm-Cvp" secondAttribute="bottom" id="Cql-ZW-8dC"/>
+                            <constraint firstItem="nkl-ir-UyH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Gu0-a3-vTw"/>
+                            <constraint firstItem="k8N-Vm-Cvp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LH5-oD-n1w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nkl-ir-UyH" secondAttribute="bottom" constant="60" id="X0S-lP-juD"/>
+                            <constraint firstItem="k8N-Vm-Cvp" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="aYe-9j-yoq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xi2-p1-i4t" secondAttribute="trailing" constant="16" id="eqv-0r-2CZ"/>
+                            <constraint firstItem="k8N-Vm-Cvp" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lQU-xb-ZHS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="results" width="420" height="629.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
