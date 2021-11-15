@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller3-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController3" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-DK-Mcn">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-UF-fr4">
+                                <rect key="frame" x="40" y="722" width="310" height="58"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YHQ-22-Jlc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lr-va-CAv" userLabel="Settings1">
+                                <rect key="frame" x="16" y="74" width="358" height="76.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="50"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4Q-Jt-8gb">
+                                <rect key="frame" x="40" y="259.66666666666669" width="310" height="58"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="30"/>
+                                <state key="normal" title="Style checkers">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pageStyleAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ftp-Vj-1N8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTf-Zx-wtq">
+                                <rect key="frame" x="40" y="170.66666666666666" width="310" height="69"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="37"/>
+                                <state key="normal" title="Background Style">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundStyle:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x4b-H1-h0E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-Il-5d4">
+                                <rect key="frame" x="40" y="337.66666666666669" width="310" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pF5-5g-wLz">
+                                <rect key="frame" x="40" y="395.66666666666669" width="310" height="32"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Russian"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="languageDidChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="hAC-0y-lXp"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L4Q-Jt-8gb" secondAttribute="trailing" constant="40" id="6la-sS-4Dy"/>
+                            <constraint firstItem="a2k-Il-5d4" firstAttribute="top" secondItem="L4Q-Jt-8gb" secondAttribute="bottom" constant="20" id="83B-lb-QFh"/>
+                            <constraint firstItem="L4Q-Jt-8gb" firstAttribute="top" secondItem="zTf-Zx-wtq" secondAttribute="bottom" constant="20" id="FmR-Mn-FRG"/>
+                            <constraint firstItem="pF5-5g-wLz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="HDm-f1-mhT"/>
+                            <constraint firstItem="a2k-Il-5d4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Hs8-Bd-tBa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="A9c-UF-fr4" secondAttribute="bottom" constant="30" id="HvZ-fQ-5oF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6lr-va-CAv" secondAttribute="trailing" constant="16" id="INe-is-LmO"/>
+                            <constraint firstItem="6lr-va-CAv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="M6l-75-UWg"/>
+                            <constraint firstItem="zTf-Zx-wtq" firstAttribute="top" secondItem="6lr-va-CAv" secondAttribute="bottom" constant="20" id="N3Z-vL-tpR"/>
+                            <constraint firstItem="L4Q-Jt-8gb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="NHe-Tr-8LV"/>
+                            <constraint firstItem="Z42-DK-Mcn" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OvC-a8-bf5"/>
+                            <constraint firstItem="6lr-va-CAv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="PVA-KT-Xep"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A9c-UF-fr4" secondAttribute="trailing" constant="40" id="Zmz-3D-ikN"/>
+                            <constraint firstItem="A9c-UF-fr4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="cNu-Og-I8o"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zTf-Zx-wtq" secondAttribute="trailing" constant="40" id="dEZ-QB-QNn"/>
+                            <constraint firstItem="Z42-DK-Mcn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gNS-Cu-fYf"/>
+                            <constraint firstItem="Z42-DK-Mcn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gcm-Zz-dgy"/>
+                            <constraint firstItem="pF5-5g-wLz" firstAttribute="top" secondItem="a2k-Il-5d4" secondAttribute="bottom" constant="10" id="grZ-Ye-hkk"/>
+                            <constraint firstAttribute="bottom" secondItem="Z42-DK-Mcn" secondAttribute="bottom" id="lA9-nB-gR4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="a2k-Il-5d4" secondAttribute="trailing" constant="40" id="nGC-lO-phw"/>
+                            <constraint firstItem="zTf-Zx-wtq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="trj-D0-MNV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pF5-5g-wLz" secondAttribute="trailing" constant="40" id="yQJ-fQ-GRt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="A9c-UF-fr4" id="A7W-q4-7Em"/>
+                        <outlet property="backgroundButton" destination="zTf-Zx-wtq" id="dhR-Fx-ji7"/>
+                        <outlet property="languageControl" destination="pF5-5g-wLz" id="0aq-wK-Kgd"/>
+                        <outlet property="languageLabel" destination="a2k-Il-5d4" id="ar6-FL-P9b"/>
+                        <outlet property="settingsLable" destination="6lr-va-CAv" id="M0m-Qs-vxC"/>
+                        <outlet property="styleCheckersButton" destination="L4Q-Jt-8gb" id="eQ7-zw-a3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.46153846153846" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="621" height="1344"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="ResultTableViewCell" customModule="lesson12_homeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-nJ-TaF">
+                        <rect key="frame" x="117" y="2" width="118" height="38.5"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="25"/>
+                        <color key="textColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHU-LQ-gfH">
+                        <rect key="frame" x="122.5" y="40.5" width="32" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" systemColor="systemBlueColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color of checker:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXs-Ax-dCT">
+                        <rect key="frame" x="2" y="66" width="99" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMn-su-OBk">
+                        <rect key="frame" x="103" y="66.5" width="32" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" systemColor="tintColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-KR-WpQ">
+                        <rect key="frame" x="275" y="41" width="32" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" systemColor="tintColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The second player:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noH-4Q-zHi">
+                        <rect key="frame" x="162" y="40.5" width="111" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw7-qN-K5A">
+                        <rect key="frame" x="274" y="67" width="32" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" systemColor="tintColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color of checker:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UO9-kz-vHz">
+                        <rect key="frame" x="173" y="66.5" width="99" height="26"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="17"/>
+                        <color key="textColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OK-BL-imp">
+                        <rect key="frame" x="30" y="99.5" width="87.5" height="31"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.17830721620000001" blue="0.15489879519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The first player:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sr-hK-MGT">
+                        <rect key="frame" x="2" y="42.5" width="118.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.96620899439999997" green="0.89363958480000005" blue="0.3474655384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn8-9t-iBw">
+                        <rect key="frame" x="214" y="98" width="88" height="31"/>
+                        <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.17830721620000001" blue="0.15489879519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="o1J-nJ-TaF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0KM-Ab-zD3"/>
+                    <constraint firstAttribute="trailing" secondItem="ZIp-KR-WpQ" secondAttribute="trailing" constant="45" id="1Ke-7k-o98"/>
+                    <constraint firstItem="Pw7-qN-K5A" firstAttribute="top" secondItem="ZIp-KR-WpQ" secondAttribute="bottom" id="27g-v2-W6M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pw7-qN-K5A" secondAttribute="trailing" constant="30" id="3fq-5T-Nos"/>
+                    <constraint firstItem="ZIp-KR-WpQ" firstAttribute="leading" secondItem="noH-4Q-zHi" secondAttribute="trailing" constant="2" id="472-Tp-y4o"/>
+                    <constraint firstItem="Pw7-qN-K5A" firstAttribute="leading" secondItem="UO9-kz-vHz" secondAttribute="trailing" constant="2" id="4XZ-ra-fYj"/>
+                    <constraint firstItem="noH-4Q-zHi" firstAttribute="top" secondItem="o1J-nJ-TaF" secondAttribute="bottom" id="5Fh-RJ-2cS"/>
+                    <constraint firstItem="ZIp-KR-WpQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="6fx-UR-48F"/>
+                    <constraint firstItem="7OK-BL-imp" firstAttribute="top" secondItem="qXs-Ax-dCT" secondAttribute="bottom" constant="7.5" id="I1J-Jx-lan"/>
+                    <constraint firstItem="o1J-nJ-TaF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="IN0-oD-key"/>
+                    <constraint firstItem="9Sr-hK-MGT" firstAttribute="top" secondItem="o1J-nJ-TaF" secondAttribute="bottom" constant="2" id="NNi-W5-4KE"/>
+                    <constraint firstItem="7OK-BL-imp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="OE2-vD-TtB"/>
+                    <constraint firstItem="ZHU-LQ-gfH" firstAttribute="top" secondItem="o1J-nJ-TaF" secondAttribute="bottom" id="PDh-EV-CWE"/>
+                    <constraint firstItem="Cn8-9t-iBw" firstAttribute="top" secondItem="UO9-kz-vHz" secondAttribute="bottom" constant="5.5" id="Qi9-hY-ShW"/>
+                    <constraint firstItem="qMn-su-OBk" firstAttribute="leading" secondItem="qXs-Ax-dCT" secondAttribute="trailing" constant="2" id="SS4-wS-F10"/>
+                    <constraint firstItem="9Sr-hK-MGT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="Uze-xo-d9Y"/>
+                    <constraint firstItem="ZHU-LQ-gfH" firstAttribute="leading" secondItem="9Sr-hK-MGT" secondAttribute="trailing" constant="2" id="VeB-Su-xPd"/>
+                    <constraint firstItem="qXs-Ax-dCT" firstAttribute="top" secondItem="9Sr-hK-MGT" secondAttribute="bottom" constant="3" id="ZCs-Bw-9Hn"/>
+                    <constraint firstItem="qXs-Ax-dCT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="cG3-TK-mva"/>
+                    <constraint firstAttribute="trailing" secondItem="Cn8-9t-iBw" secondAttribute="trailing" constant="50" id="lhP-jD-1fI"/>
+                    <constraint firstItem="UO9-kz-vHz" firstAttribute="top" secondItem="noH-4Q-zHi" secondAttribute="bottom" id="xhn-3a-6g0"/>
+                    <constraint firstItem="qMn-su-OBk" firstAttribute="top" secondItem="ZHU-LQ-gfH" secondAttribute="bottom" id="zLz-1e-W4Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="colorOfCheckerPlayer1" destination="qMn-su-OBk" id="XCz-y4-Ta7"/>
+                <outlet property="colorOfCheckerPlayer1Label" destination="qXs-Ax-dCT" id="VCI-gP-S4x"/>
+                <outlet property="colorOfCheckerPlayer2" destination="Pw7-qN-K5A" id="i32-Ay-BI1"/>
+                <outlet property="colorOfCheckerPlayer2Label" destination="UO9-kz-vHz" id="0Sp-US-f9y"/>
+                <outlet property="dateOfPlay" destination="o1J-nJ-TaF" id="dTQ-Ht-bY1"/>
+                <outlet property="nameOfPlayer1" destination="ZHU-LQ-gfH" id="Ry1-m9-PPL"/>
+                <outlet property="nameOfPlayer1Label" destination="9Sr-hK-MGT" id="V70-0M-PlU"/>
+                <outlet property="nameOfPlayer2" destination="ZIp-KR-WpQ" id="UBF-zp-OBf"/>
+                <outlet property="nameOfPlayer2Label" destination="noH-4Q-zHi" id="rS4-Kg-7Ou"/>
+                <outlet property="winnerPlayer1" destination="7OK-BL-imp" id="RgG-HD-BXM"/>
+                <outlet property="winnerPlayer2" destination="Cn8-9t-iBw" id="SG2-iT-kF9"/>
+            </connections>
+            <point key="canvasLocation" x="275.38461538461536" y="-36.255924170616112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
