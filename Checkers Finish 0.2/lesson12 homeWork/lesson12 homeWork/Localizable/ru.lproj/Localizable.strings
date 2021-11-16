@@ -1,0 +1,70 @@
+/* 
+  LocalizedRu.strings
+  lesson12 homeWork
+
+  Created by Женя  on 21.09.21.
+  
+*/
+
+//Main screen
+"startGame_button_text" = "Начать игру";
+"setting_button_text" = "Настройки";
+"results_button_text" = "Результаты";
+"about_button_text" = "История шашек";
+"alert_message_text" = "Желаете продолжить?";
+"alert_title1_text" = "Новая игра";
+"alert_title2_text" = "Продолжить";
+"alert_title3_text" = "Отмена";
+
+//Play screen
+"back_button_text" = "Назад";
+"alert_message_text_playScreen" = "Вы хотите покинуть игру?";
+"alert_title1_text_playScreen" = "Сохранить и выйти из игры";
+"alert_title2_text_playScreen" = "Выйти из игры";
+
+//Player names screen
+"accept_button_text" = "Принять";
+"cancel_button_text" = "Отмена";
+"enterNameFirstPlayer_text" = "Введите имя первого игрока";
+"enterNameSecondPlayer_text" = "Введите имя второго игрока";
+"notNames_Label_text" = "Вы не ввели имена обоих игроков";
+"congratulations_Label_text" = "Поздравляем";
+"winner_Label_text" = " вы выйграли";
+"welcome_Label1_text" = "Привет ";
+"welcome_Label2_text" = " и ";
+"welcome+Label3_text" = "Вы вернулись?";
+"welcome+Label4_text" = " ваш ход";
+
+
+//Settings screen
+"settingsLabel_label_text" = "Настройки";
+"backgroundStyle_button_text" = "Выбрать фон";
+"pageStyleAction_button_text" = "Выбрать стиль шашек";
+"languageLabel_label_text" = "Выбрать язык";
+"Back_button_text" = "Назад";
+"BackStyle_button_text" = "Назад";
+
+//Results screen
+"resultLabel_label_text" = "Результаты";
+"backButtonAction_button_text" = "Назад";
+"clearHistory_button_text" = "Очистить историю";
+
+//Result tableView
+"nameOfPlayer1_label_text" = "Игрок №1 : ";
+"nameOfPlayer2_label_text" = "Игрок №2 :";
+"colorOfCheckerPlayer1_label_text" = "Цвет шашек :";
+"colorOfCheckerPlayer2_label_text" = "Цвет шашек :";
+"winnerPlayer1_label_text" = "Победитель";
+"winnerPlayer2_label_text" = "Победитель";
+"Looser_label1_text" = "Проигравший";
+"black_colorOfCheckerLabel_text" = "Черный";
+"white_colorOfCheckerLabel_text" = "Белый";
+
+
+//About screen
+"historyLabel_label_text" = "История шашек";
+"bakButtonAction_button_text" = "Назад в меню";
+
+//PlayersName screen
+
+

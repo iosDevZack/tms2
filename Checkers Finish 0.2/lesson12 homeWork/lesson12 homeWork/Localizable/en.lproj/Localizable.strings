@@ -1,0 +1,71 @@
+/* 
+  LocalizedRu.strings
+  lesson12 homeWork
+
+  Created by Женя  on 21.09.21.
+  
+*/
+
+//Main screen
+"startGame_button_text" = "Start game";
+"setting_button_text" = "Settings";
+"results_button_text" = "Results";
+"about_button_text" = "About";
+"alert_message_text" = "Do you want to continue?";
+"alert_title1_text" = "New game";
+"alert_title2_text" = "Continue";
+"alert_title3_text" = "Cancel";
+
+//Play screen
+"back_button_text" = "Back";
+"alert_message_text_playScreen" = "Do you want to leave the game?";
+"alert_title1_text_playScreen" = "Save and leave the game";
+"alert_title2_text_playScreen" = "Leave the game";
+"congratulations_Label_text" = "Congratulations";
+"winner_Label_text" = " you are winner";
+"welcome_Label1_text" = "Hello ";
+"welcome_Label2_text" = " and ";
+"welcome+Label3_text" = "Are you here again?";
+"welcome+Label4_text" = " your moove";
+
+//Player names screen
+"accept_button_text" = "Accept";
+"cancel_button_text" = "Cancel";
+"enterNameFirstPlayer_text" = "Enter name first player";
+"enterNameSecondPlayer_text" = "Enter name second player";
+"notNames_Label_text" = "You have not entered the name of the players";
+
+
+//Settings screen
+"settingsLabel_label_text" = "Settings";
+"backgroundStyle_button_text" = "Background Style";
+"pageStyleAction_button_text" = "Style checkers";
+"languageLabel_label_text" = "Language";
+"Back_button_text" = "Back";
+"BackStyle_button_text" = "Back";
+
+//Results screen
+"resultLabel_label_text" = "Results";
+"backButtonAction_button_text" = "Back";
+"clearHistory_button_text" = "Clear history";
+
+//Results screen tableView
+"nameOfPlayer1_label_text" = "The first player : ";
+"nameOfPlayer2_label_text" = "The second player :";
+"colorOfCheckerPlayer1_label_text" = "Color checker :";
+"colorOfCheckerPlayer2_label_text" = "Color checker :";
+"winnerPlayer1_label_text" = "Winner";
+"winnerPlayer2_label_text" = "Winner";
+"Looser_label1_text" = "Looser";
+"black_colorOfCheckerLabel_text" = "Black";
+"white_colorOfCheckerLabel_text" = "White";
+
+
+//About screen
+"historyLabel_label_text" = "History checkers";
+"bakButtonAction_button_text" = "Back to menu";
+
+
+
+
+

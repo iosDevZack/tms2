@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Khand-Regular.ttf">
+            <string>Khand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Style Checkers-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StyleCheckers" id="Y6W-OH-hqX" customClass="StyleCheckers" customModule="lesson12_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="Sby-ad-tTO">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HBj-7b-WRm">
+                                <rect key="frame" x="20" y="294" width="350" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="0.51795322847682124" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="qls-q7-g3i"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tWl-8O-kJK">
+                                    <size key="itemSize" width="170" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHK-hD-lmg">
+                                <rect key="frame" x="150" y="689" width="90" height="58"/>
+                                <fontDescription key="fontDescription" name="Khand-Regular" family="Khand" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4jB-yj-4d9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pHK-hD-lmg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="3pE-cl-p58"/>
+                            <constraint firstAttribute="bottom" secondItem="Sby-ad-tTO" secondAttribute="bottom" id="8km-ey-jcK"/>
+                            <constraint firstItem="Sby-ad-tTO" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Gs8-QH-B0y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pHK-hD-lmg" secondAttribute="trailing" constant="150" id="I1R-EF-j9l"/>
+                            <constraint firstItem="Sby-ad-tTO" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="KTg-ea-dAz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pHK-hD-lmg" secondAttribute="bottom" constant="63" id="KZt-hA-DW8"/>
+                            <constraint firstItem="HBj-7b-WRm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RAt-0P-9eI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HBj-7b-WRm" secondAttribute="trailing" constant="20" id="fDN-sU-kH2"/>
+                            <constraint firstItem="Sby-ad-tTO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jJu-mh-uID"/>
+                            <constraint firstItem="HBj-7b-WRm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="250" id="mN9-Z9-OUX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="pHK-hD-lmg" id="FI6-l3-xmJ"/>
+                        <outlet property="collectionView" destination="HBj-7b-WRm" id="SwM-6k-ivS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.05797101449275" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch" width="3840" height="2160"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
