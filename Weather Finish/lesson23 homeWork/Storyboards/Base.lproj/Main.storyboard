@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xdK-qw-2jt">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="DuA-S3-pdr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xdK-qw-2jt" customClass="TabBarViewController" customModule="lesson23_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YLQ-aS-L4y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Cpv-hg-2vz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pea-TM-Uuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5693.8461538461534" y="53.317535545023695"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="lesson23_homeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherLoading" translatesAutoresizingMaskIntoConstraints="NO" id="wxz-AT-kCT">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KZg-JN-4cF">
+                                <rect key="frame" x="176.66666666666666" y="403.66666666666669" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z5v-EF-rSv"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wxz-AT-kCT" secondAttribute="bottom" id="5Sq-G2-FTL"/>
+                            <constraint firstItem="KZg-JN-4cF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d0i-Pd-ajq"/>
+                            <constraint firstItem="wxz-AT-kCT" firstAttribute="leading" secondItem="z5v-EF-rSv" secondAttribute="leading" id="dvo-Au-bzn"/>
+                            <constraint firstItem="KZg-JN-4cF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghr-uT-JxV"/>
+                            <constraint firstItem="wxz-AT-kCT" firstAttribute="trailing" secondItem="z5v-EF-rSv" secondAttribute="trailing" id="vKj-xA-dTK"/>
+                            <constraint firstItem="wxz-AT-kCT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="znS-kH-l5V"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="Z7y-3O-ye6"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KZg-JN-4cF" id="fCS-PJ-CbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6623.0769230769229" y="53.317535545023695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weatherLoading" width="500" height="654.5"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
